@@ -7,9 +7,34 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>List of Vessels</h1>
+    <h1>Admin Page - List Vessels</h1>
+    
+    <!-- Buttons -->
+    <button id="refreshListBtn">Refresh List</button>
+    <button id="addVesselBtn">Add Vessel</button>
+    <button id="deleteVesselBtn">Delete Vessel</button>
+    
+    <!-- Options -->
+    <label for="sortByOption">Sort by:</label>
+    <select id="sortByOption">
+        <option value="name">Name</option>
+        <option value="type">Type</option>
+        <option value="price">Price</option>
+    </select>
+
+    <label for="filterByOption">Filter by:</label>
+    <select id="filterByOption">
+        <option value="all">All</option>
+        <option value="type1">Type 1</option>
+        <option value="type2">Type 2</option>
+        <!-- Add more filter options as needed -->
+    </select>
+    
+    <!-- Container for displaying vessel list -->
     <div id="vesselList"></div>
 
+    <!-- JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
+
